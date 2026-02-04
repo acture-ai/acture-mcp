@@ -1,0 +1,106 @@
+# Daily Standup Report
+
+Create a team synchronization report capturing today's status.
+
+## Goal
+Capture what happened today, what the team is working on, and what is blocking progress.
+
+## Information Sources
+Use acture-mcp tools to gather information and publish report to Notion.
+
+## Data Format Guide
+
+Structure your response as a JSON object optimized for quick scanning:
+
+### date (string)
+Today's date (e.g., "January 30, 2026")
+
+### daily_summary (string)
+One-sentence pulse check (e.g., "Strong progress on API migration, 2 blockers identified")
+
+### completed_today (array of strings)
+What got done today. Be specific. Use `code` for technical refs.
+
+Example:
+```json
+[
+  "Merged `auth-refactor` branch (PR #345)",
+  "Fixed production bug in payment webhook",
+  "Updated API documentation"
+]
+```
+
+### in_progress (array of objects)
+Active work with owners:
+```json
+[
+  {
+    "task": "Database migration scripts",
+    "owner": "@alice",
+    "eta": "Tomorrow EOD"
+  },
+  {
+    "task": "Mobile responsive fixes",
+    "owner": "@bob",
+    "eta": "In review"
+  }
+]
+```
+
+### blockers (array of objects, if any)
+```json
+[
+  {
+    "blocker": "Waiting for AWS access from DevOps",
+    "affects": "@charlie, @diana",
+    "since": "Yesterday",
+    "escalation": "Reached out to @devops-lead"
+  }
+]
+```
+
+### upcoming_tomorrow (array of strings)
+Planned work for tomorrow.
+
+### decisions_made (array of strings, optional)
+Important decisions from today:
+```json
+[
+  "Decided to use Redis over Memcached for caching layer",
+  "Agreed to postpone feature X to next sprint"
+]
+```
+
+### help_needed (array of objects, optional)
+```json
+[
+  {
+    "who": "@eve",
+    "needs": "Code review for complex PR #350",
+    "from": "Anyone with GraphQL experience"
+  }
+]
+```
+
+### commits_of_note (array of objects, optional)
+Significant commits today:
+```json
+[
+  {
+    "sha": "abc123",
+    "message": "feat: add rate limiting middleware",
+    "author": "@alice"
+  }
+]
+```
+
+### notes (string, optional)
+Shout-outs, observations, or anything else worth mentioning.
+
+## Formatting Tips
+
+- Keep everything concise - this is for quick scanning
+- Use **bold** for people's names: **@alice**
+- Use `code` for branch names, PR numbers, commit SHAs
+- Omit empty sections (no blockers = no blockers section)
+- Prioritize blockers - they need visibility

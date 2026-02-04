@@ -1,0 +1,60 @@
+#!/usr/bin/env node
+
+const { Command } = require('commander');
+const chalk = require('chalk');
+const packageJson = require('../package.json');
+const initCommand = require('../src/cli/commands/init');
+const syncCommand = require('../src/cli/commands/sync');
+const statusCommand = require('../src/cli/commands/status');
+const helpCommand = require('../src/cli/commands/help');
+
+const program = new Command();
+
+program
+  .name('acture-mcp')
+  .description('Local GitHub repository intelligence CLI tool')
+  .version(packageJson.version);
+
+program
+  .command('init')
+  .description('Interactive setup: GitHub token, repo, local sync path, docs URL')
+  .action(initCommand);
+
+program
+  .command('sync')
+  .description('Clone repo to local path or pull latest changes')
+  .action(syncCommand);
+
+program
+  .command('status')
+  .description('Show config validity, last sync time, and repo status')
+  .action(statusCommand);
+
+program
+  .command('help [command]')
+  .description('Show usage and command descriptions')
+  .action(helpCommand);
+
+// Default help command
+program.on('--help', () => {
+  console.log('');
+  console.log(chalk.blue('Examples:'));
+  console.log('  $ acture-mcp init');
+  console.log('  $ acture-mcp sync');
+  console.log('  $ acture-mcp status');
+  console.log('  $ acture-mcp help');
+});
+
+// Handle unknown commands
+program.on('command:*', () => {
+  console.error(chalk.red(`Unknown command: ${program.args.join(' ')}`));
+  console.log(chalk.yellow('See "acture-mcp --help" for available commands.'));
+  process.exit(1);
+});
+
+// Parse arguments
+if (process.argv.length === 2) {
+  program.help();
+}
+
+program.parse(process.argv);

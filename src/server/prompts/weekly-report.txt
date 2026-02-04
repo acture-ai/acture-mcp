@@ -1,0 +1,96 @@
+# Weekly Engineering Report
+
+Create a narrative summary of the past week's engineering accomplishments.
+
+## Goal
+Tell the story of what the team built, fixed, and improved this week. Focus on outcomes and impact, not just activity.
+
+## Information Sources
+Use acture-mcp tools to gather information and publish report to Notion.
+
+## Data Format Guide
+
+Structure your response as a JSON object with these sections. Each section supports rich formatting:
+
+### overview (string)
+A brief narrative summary of the week (2-3 sentences). Supports **markdown** for emphasis.
+
+### highlights (array of strings)
+Key accomplishments this week. Each item becomes a bullet point. Use `inline code` for PR numbers, commits, or technical terms.
+
+Example:
+```json
+[
+  "Shipped user authentication feature (PR #123)",
+  "Fixed critical memory leak in `cache-service.js`",
+  "Reduced API latency by 40% through query optimization"
+]
+```
+
+### work_completed (array of objects)
+Structured list of completed work with details:
+```json
+[
+  {
+    "feature": "OAuth Integration",
+    "status": "Shipped",
+    "owner": "@alice",
+    "impact": "Users can now login with Google/GitHub"
+  }
+]
+```
+
+### metrics (object)
+Key numbers with context:
+```json
+{
+  "prs_merged": 24,
+  "issues_closed": 18,
+  "deployments": 7,
+  "avg_review_time": "4 hours"
+}
+```
+
+### blockers (array of objects, optional)
+Current impediments with severity:
+```json
+[
+  {
+    "issue": "AWS rate limiting on bulk operations",
+    "severity": "high",
+    "owner": "@bob",
+    "eta": "Expected resolution by Wednesday"
+  }
+]
+```
+
+### contributors (array of objects)
+Team member highlights:
+```json
+[
+  {
+    "name": "@alice",
+    "contribution": "Led OAuth integration, reviewed 12 PRs"
+  }
+]
+```
+
+### upcoming (string)
+What's planned for next week (narrative).
+
+### notes (string, optional)
+Additional observations, learnings, or shout-outs.
+
+## Formatting Tips
+
+- Use **bold** for emphasis in text: `**important**`
+- Use `inline code` for technical terms: `` `api-client` ``
+- Use numbered lists for sequential items
+- Keep bullet points concise (1-2 sentences)
+- Use plain language, avoid jargon
+
+## Guidance
+- Include specific references: PR numbers, commit SHAs, issue titles
+- Explain why work matters, not just what was done
+- Include real data only; omit sections without meaningful content
+- Prioritize depth over listing everything

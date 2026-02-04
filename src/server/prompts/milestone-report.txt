@@ -1,0 +1,124 @@
+# Milestone Review
+
+Create a retrospective of the completed sprint or milestone.
+
+## Goal
+Tell the story of the milestone: what was planned, what was delivered, what was learned, and what comes next.
+
+## Information Sources
+Use acture-mcp tools to gather information and publish report to Notion.
+
+## Data Format Guide
+
+Structure your response as a JSON object with these sections:
+
+### summary (object)
+High-level milestone info:
+```json
+{
+  "milestone_name": "Sprint 24 - Performance & Polish",
+  "duration": "Jan 15 - Jan 29, 2026",
+  "status": "Completed",
+  "completion_rate": "85%"
+}
+```
+
+### narrative (string)
+The story of this milestone (3-5 sentences). What was the main theme? Any surprises?
+
+### goals_vs_reality (array of objects)
+Compare planned vs actual:
+```json
+[
+  {
+    "goal": "Reduce API latency to <200ms",
+    "planned": "Optimize database queries",
+    "actual": "Achieved 150ms average latency",
+    "status": "exceeded"
+  },
+  {
+    "goal": "Launch mobile app v2",
+    "planned": "Full feature parity",
+    "actual": "Launched with 90% features",
+    "status": "partial"
+  }
+]
+```
+
+### deliverables (array of objects)
+What actually shipped:
+```json
+[
+  {
+    "item": "New dashboard UI",
+    "type": "feature",
+    "status": "shipped",
+    "link": "PR #234"
+  }
+]
+```
+
+### metrics (object)
+Key numbers:
+```json
+{
+  "story_points_completed": 45,
+  "story_points_planned": 52,
+  "velocity": "+12% vs last sprint",
+  "bugs_introduced": 3,
+  "bugs_fixed": 12
+}
+```
+
+### technical_highlights (array of strings)
+Notable technical achievements. Use `code formatting` for technical terms.
+
+### challenges (array of objects)
+```json
+[
+  {
+    "challenge": "Third-party API deprecation",
+    "impact": "Delayed integration by 3 days",
+    "resolution": "Migrated to new API with adapter pattern"
+  }
+]
+```
+
+### retrospective (object)
+```json
+{
+  "what_went_well": [
+    "Strong collaboration between frontend and backend teams",
+    "Early testing caught critical bugs before release"
+  ],
+  "what_to_improve": [
+    "Better estimation for infrastructure tasks",
+    "More documentation during development"
+  ],
+  "action_items": [
+    "Create estimation guidelines for DevOps work",
+    "Require README updates in PR template"
+  ]
+}
+```
+
+### contributors (array of objects)
+```json
+[
+  {
+    "name": "@charlie",
+    "role": "Tech Lead",
+    "impact": "Architected new caching layer, mentored 2 junior devs"
+  }
+]
+```
+
+### next_milestone_preview (string)
+What's coming next (brief teaser).
+
+## Formatting Tips
+
+- Use **bold** for emphasis
+- Use `inline code` for commits, PRs, file names
+- Be honest about partial deliveries - use status: "partial" or "missed"
+- Include specific PR numbers, epic links, commit ranges

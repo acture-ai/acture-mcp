@@ -1,0 +1,51 @@
+{
+  "name": "acture-mcp",
+  "version": "1.0.5",
+  "description": "MCP server and CLI that turns engineering activity into narrative reports for AI agents",
+  "readmeFilename": "README.md",
+  "main": "src/server/index.js",
+  "types": "src/server/index.js",
+  "bin": {
+    "acture-mcp": "./bin/acture-mcp",
+    "acture-mcp-server": "./bin/acture-mcp-server"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "scripts/",
+    "vendor/",
+    "README.md",
+    "LICENSE.txt"
+  ],
+  "scripts": {
+    "test": "node test/test.js",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "keywords": [
+    "github",
+    "repository",
+    "cli",
+    "mcp",
+    "model-context-protocol",
+    "git",
+    "code-intelligence"
+  ],
+  "author": "Vadim Khafizov",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "@notionhq/client": "^2.2.15",
+    "axios": "^1.5.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "conf": "^11.0.2",
+    "inquirer": "^8.2.6",
+    "minisearch": "^7.2.0",
+    "ora": "^5.4.1",
+    "simple-git": "^3.19.1",
+    "zod": "^3.22.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+# Ensure bin files have LF line endings for Unix compatibility
+bin/* text eol=lf
+scripts/* text eol=lf
+
+# Treat vendor binaries as binary
+vendor/**/* binary
