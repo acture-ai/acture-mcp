@@ -77,6 +77,7 @@ Or clone and install locally:
 git clone https://github.com/vkhafizov/acture-mcp.git
 cd acture-mcp
 npm install
+npm link
 ```
 
 ## Quick Setup
