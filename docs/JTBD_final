@@ -1,0 +1,100 @@
+
+# JTBD — Acture (based on survey)
+
+*Based on a primary survey of engineering leaders (Tech Leads, Engineering Managers, CTO/VP Engineering, Founders) from companies with 10 to 1000+ employees. Survey conducted in March 2026.*
+
+---
+
+## 1. "Understand what's really happening without constantly pinging people"
+
+**When:** when I don't have time for another call or Slack thread to find out the status of work, and Jira doesn't reflect reality — developers don't update it every day...
+
+**I want to:** see the real status of the team's work without having to piece together information manually...
+
+**So that:** I can spend time on management, not on collecting data.
+
+**Functional:** get an up-to-date status without manual aggregation
+
+**Emotional:** frustration — "I'm supposed to know, but the only way to find out is to ping someone again"
+
+**Social:** not look like a manager who has no idea what's going on
+
+**Trigger:** another situation where Jira shows one thing and a sync call reveals something completely different
+
+**Workaround:** calls, Slack pings, gut feeling as a management tool
+
+**Source — direct quote from survey (Engineering Manager, SaaS, 50–200 employees):**
+> *"Getting the real visibility without constantly pinging folks over Slack and getting on 'quick calls' to understand what's really going on. On paper Jira should do that but devs generally don't update Jira with every detail every day."*
+
+---
+
+## 2. "Predict deadlines before they slip"
+
+**When:** when a deadline is two weeks away and I have no idea if the team is on track — and I only find out when things are already on fire...
+
+**I want to:** see early signals that something is going wrong while there's still time to react...
+
+**So that:** I don't have to explain to leadership after the fact why we missed it.
+
+**Functional:** get a warning about risks before they become facts
+
+**Emotional:** anxiety — "I'm responsible for the deadlines but I don't control them"
+
+**Social:** look like a manager who runs the situation, not one who just reacts to it
+
+**Trigger:** a missed deadline that nobody flagged in advance
+
+**Workaround:** status meetings, dashboards, intuition ("gut feeling" — several respondents named this as a real tool)
+
+**Source — survey data:**
+"Delivery predictability" was named the hardest problem by 14 out of 30 respondents — the most frequent answer in the survey. Among them: Engineering Managers and Tech Leads from Fintech, e-commerce, and SaaS.
+
+---
+
+## 3. "Keep track of everything and not lose sight of any team"
+
+**When:** when I'm managing several teams, each with their own projects and deadlines — and I physically can't maintain an up-to-date picture of all of them at once...
+
+**I want to:** have a single place where I can see the state of all teams without having to attend a separate meeting with each one...
+
+**So that:** I can spend time making decisions, not gathering status updates.
+
+**Functional:** a unified real-time overview across all teams
+
+**Emotional:** overload — "I'm constantly missing something"
+
+**Social:** not be the last person to find out when something goes wrong
+
+**Trigger:** a situation where one team quietly got stuck and you only found out by accident
+
+**Workaround:** a mix of everything — Jira + Slack + dashboards + syncs + intuition (the most common answer to "how do you track status")
+
+**Source — survey data:**
+"Coordination across teams" was the second most frequent problem (13 out of 30 respondents).
+- Direct quote (Engineering Manager, e-commerce, 500–1000 employees): *"Keeping in mind all projects and deadlines"*
+- Direct quote (CTO, Banking Technology, 50–200 employees): *"Silence from staff, failure to notify about problems"*
+
+---
+
+## 4. "Explain the real value of engineering to leadership"
+
+**When:** when I need to show the business what the engineering team actually delivers — but all I have is velocity and closed ticket counts, which mean nothing to non-technical leadership...
+
+**I want to:** translate engineering work into business language — product impact, ROI, feature delivery speed...
+
+**So that:** I can get resources and trust from the business instead of defending why the team "does stuff but it's unclear what."
+
+**Functional:** connect engineering metrics to business outcomes
+
+**Emotional:** helplessness — "I know the team is doing important work but I can't prove it"
+
+**Social:** look like a strategic business partner, not "the tech person asking for money"
+
+**Trigger:** leadership asking "what's the ROI of your team this quarter?"
+
+**Workaround:** manual report preparation, Power BI dashboards, presentations before every review cycle
+
+**Source — survey data:**
+- Direct quote (Engineering Manager, Telecom, 500–1000 employees): *"Calculating real impact and ROI"*
+- Direct quote (CTO, SaaS, 500–1000 employees): *"Building strong engineering culture, product alignment and clear communication with stakeholders"*
+- Direct quote (Tech Lead, e-commerce, 500–1000 employees): *"Solve business challenges from engineering side and balancing speed with quality"*
