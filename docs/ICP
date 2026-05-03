@@ -1,0 +1,191 @@
+# JTBD Prioritization by ICP
+
+**Framework:** PIU (Pain × Impact × Urgency), maximum score: 27
+**Scale:** 1 = low, 2 = medium, 3 = high
+**Sources:** Survey (30 respondents), Target Audience Research, DORA 2024 Report
+
+---
+
+## ICP A — Engineering Manager, 50–200 employees
+
+*Visibility Gap Index is highest for this company size per Target Audience Research.
+Top pains: delivery predictability (14/30) and understanding real team status.*
+
+---
+
+### JTBD 1 — "Understand what's really happening without constantly pinging people"
+*(Survey #1 + Research #2 — same job)*
+
+**P = 3** — Strongest direct quote in the survey comes from an EM at a 50–200 company:
+*"Getting the real visibility without constantly pinging folks."*
+Visibility Gap Index is highest for this company size.
+
+**I = 3** — Without this, the EM spends 2–5 hours per week manually gathering status instead of managing.
+Most EMs in the survey report spending 2–5 hours per week on coordination.
+
+**U = 2** — Happens weekly but not daily.
+
+**Score: 3 × 3 × 2 = 18**
+
+---
+
+### JTBD 2 — "Predict deadlines before they slip"
+*(Survey #2 + Research #5 — same job)*
+
+**P = 3** — "Delivery predictability" was named the hardest problem by 14 out of 30 respondents —
+the most frequent answer in the survey. Majority are EMs.
+
+**I = 3** — A missed deadline means explaining to leadership after the fact, losing business trust.
+DORA 2024: delivery predictability is a key indicator of team maturity.
+
+**U = 2** — Happens regularly but not daily. Trigger: end of sprint or quarter.
+
+**Score: 3 × 3 × 2 = 18**
+
+---
+
+### JTBD 3 — "Keep track of everything and not lose sight of any team"
+*(Survey #4 + Research #4 — same job)*
+
+**P = 3** — "Coordination across teams" was named a problem by 13 out of 30 respondents —
+second most frequent after delivery predictability.
+
+**I = 2** — Consequences are real but not immediate. A team can quietly stall without it becoming an incident.
+
+**U = 2** — Constant background stress, but acute situations don't happen every day.
+
+**Score: 3 × 2 × 2 = 12**
+
+---
+
+### JTBD 4 — "Explain the real value of engineering to leadership"
+*(Survey #5 — unique)*
+
+**P = 2** — Pain exists but this is not the primary problem for EMs. More often a CTO pain.
+Mentioned once in the survey: *"Calculating real impact and ROI."*
+
+**I = 2** — Affects reputation and resources but not day-to-day operations directly.
+
+**U = 1** — Rare: quarterly reviews, ad hoc requests from leadership.
+
+**Score: 2 × 2 × 1 = 4**
+
+---
+
+### JTBD 5 — "Understand the real picture vs. the feeling of AI productivity"
+*(Research #1 — unique)*
+
+**P = 3** — 20 out of 30 respondents noted development became faster after AI adoption,
+but 5 out of 30 reported increased PR review load.
+DORA 2024: AI adoption may negatively impact software delivery performance.
+
+**I = 2** — Affects quality of AI-related decisions but doesn't create immediate operational risk.
+
+**U = 1** — Relevant during AI adoption phase, not an everyday pain.
+
+**Score: 3 × 2 × 1 = 6**
+
+---
+
+### JTBD 6 — "See real team health behind the metrics"
+*(Research #3 — unique)*
+
+**P = 2** — Pain exists but not named directly in the survey.
+Confirmed indirectly via Reddit: *"On paper we are an Elite team. But if I look at actual team health? It's a mess."*
+
+**I = 3** — Burnout and hidden team problems are costly: turnover, quality decline, incidents.
+
+**U = 3** — Constant background pain, not acute but always present.
+
+**Score: 2 × 3 × 3 = 18**
+
+---
+
+
+---
+
+## ICP B — CTO / VP Engineering, 50–200 employees
+
+*Highest Visibility Gap Index by role per Target Audience Research.
+Responsible for engineering department predictability to the business.
+Gathers technical status through a chain of people.*
+
+---
+
+### JTBD 1 — "Understand what's really happening without constantly pinging people"
+
+**P = 3** — Visibility Gap Index is highest for CTO/VP per Target Audience Research.
+Technical status is gathered through a chain of people and takes 2–4 hours.
+
+**I = 2** — CTO can operate on intuition and experience. Critical but not always immediately destructive.
+
+**U = 3** — Every time status is needed for CEO or investors. This is a regular situation for a CTO.
+
+**Score: 3 × 2 × 3 = 18**
+
+---
+
+### JTBD 2 — "Predict deadlines before they slip"
+
+**P = 3** — Delivery predictability is the top pain for 14/30 respondents.
+CTO is directly accountable to the business for this.
+
+**I = 3** — For a CTO, a missed deadline means a conversation with the CEO and investors.
+Direct hit to reputation and business trust.
+
+**U = 3** — Constant background anxiety, peaks every quarter and before major releases.
+
+**Score: 3 × 3 × 3 = 27**
+
+---
+
+### JTBD 3 — "Keep track of everything and not lose sight of any team"
+
+**P = 2** — CTO has a Head of Engineering as a buffer. Pain is real but softened by structure.
+
+**I = 2** — Consequences exist but CTO learns about problems through escalation, not directly.
+
+**U = 2** — Regular but not daily.
+
+**Score: 2 × 2 × 2 = 8**
+
+---
+
+### JTBD 4 — "Explain the real value of engineering to leadership"
+
+**P = 2** — Pain exists but CTO manages it through experience and intuition.
+
+**I = 3** — Directly affects budget, hiring, and investor trust.
+LeadDev Engineering Performance Report 2025: choosing the right metrics is the #1 challenge
+for managers (60% of respondents vs. 32% among engineers).
+
+**U = 3** — Quarterly reviews, investor updates, board meetings. Regular and predictable.
+
+**Score: 2 × 3 × 3 = 18**
+
+---
+
+### JTBD 5 — "Understand the real picture vs. the feeling of AI productivity"
+
+**P = 3** — CTO makes decisions about AI tool investments.
+DORA 2024: 90% use AI at work, but 30% report little or no trust in AI-generated code.
+
+**I = 3** — Wrong AI decision = wasted budget and slower team instead of faster.
+
+**U = 3** — AI is already adopted, the question of real effectiveness is always relevant.
+
+**Score: 3 × 3 × 3 = 27**
+
+---
+
+### JTBD 6 — "See real team health behind the metrics"
+
+**P = 2** — CTO sees signals through Head of Engineering. Pain exists but not acute.
+
+**I = 3** — Burnout of key people = loss of architectural knowledge, senior engineer turnover. High cost.
+
+**U = 2** — Not daily, but a regular background risk.
+
+**Score: 2 × 3 × 2 = 12**
+
+---
